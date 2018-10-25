@@ -62,7 +62,7 @@ gcloud beta container clusters create $PRODUCT_CLUSTER_NAME \
     --project $PROJECT_NAME \
     --zone $PROJECT_ZONE \
     --no-enable-basic-auth \
-    --cluster-version "1.9.7-gke.3" \
+    --cluster-version "latest" \
     --machine-type "n1-standard-1" \
     --image-type "COS" \
     --disk-type "pd-standard" \
@@ -88,7 +88,7 @@ gcloud beta container clusters create $PRODUCT_CLUSTER_NAME \
 gcloud auth configure-docker -q
 
 # This allows us to create the YAML file without needing to edit the variables for different projects.
-cat > ../deploy/workload.yaml << EOL
+cat > /home/mehul_shah/deploy/workload.yaml << EOL
 ---
 apiVersion: "v1"
 kind: "ConfigMap"
