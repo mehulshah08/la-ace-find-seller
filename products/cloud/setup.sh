@@ -18,10 +18,10 @@ source ../../common/project_settings.sh
 # https://www.spinnaker.io/setup/install/providers/appengine/
 
 # Ensure the secrets dir exists
-mkdir -p ../app/secrets
+mkdir -p /home/mehul_shah/app/secrets
 # Create a new role for the app. 
 SERVICE_ACCOUNT_NAME=product-service
-SERVICE_ACCOUNT_DEST=../app/secrets/service_account.json
+SERVICE_ACCOUNT_DEST=/home/mehul_shah/app/secrets/service_account.json
 
 gcloud iam service-accounts create \
     $SERVICE_ACCOUNT_NAME \
