@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gcloud config set project ace-demo-2
+gcloud config set project mehul-gcp-cloud-engineering
 
 # Build common service first.
 cd common/build
